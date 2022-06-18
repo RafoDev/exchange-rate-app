@@ -51,7 +51,7 @@ class ExchangeRate:
     self.button = Button(
       self.wind,
       text="Exportar .csv", 
-      command= lambda: self.exportCsvTk(dict_columns, dict_data, 'currencies'))
+      command= lambda: self.exportCsvTk(dict_columns, dict_data, 'currencies_' + str(date.today())))
 
     self.button.grid(column=0, row=3, columnspan=2, pady=10, sticky=N, ipadx=4, ipady=4)
       
